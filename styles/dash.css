@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-main{
+    width: 100%;    
+    background-color: gray;
+    display: flex;
+    height: 100vh;
+}
+.container-navbar{
+    position: fixed;
+    width: 20%;
+    background-color: rgb(42, 42, 42);
+    height: 100vh;
+}
+.logo{
+    margin-left: 20px;
+}
+.container-div{
+    width: 20%;
+}
+.container-navbar ul{
+    margin-top: 20px;
+    height: 95vh;
+    display: flex;
+    flex-direction:column ;    
+}
+.container-navbar ul li {
+    margin-bottom: 15px;
+}
+.container-navbar ul li a{
+    font-size: .9rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+.active{
+    background-color: rgb(67, 67, 67);
+}
+.down{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+}
+.container-navbar ul li:hover{
+    background-color: rgb(67, 67, 67);
+}
+.container-navbar ul li p{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.container-navbar ul li img{
+    width: 35px;
+    transition: all 500ms 300ms ease-in-out;
+}
+.container-navbar ul li img:hover{
+    width: 40px;
+}
+.container-principal{
+    width: 80%;
+    background-color: white;        
+}
+.container-header{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+.container-header header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-user{
+    width: 18%;
+    cursor: pointer;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.container-user:hover{
+    background-color: rgb(95, 95, 95);
+}
+.container-user img{
+    width: 30px;
+    margin: 10px;
+}
+.container-user h3{
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.container-base{
+    padding: 20px;
+}
+.container-base h2{
+    margin-bottom: 20px;
+}
+.table{
+    width: 100%;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 5px;    
+}
+.table th{
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+.table th, .table td{
+    padding: 10px;
+    text-align: center;
+    
+}
+.table tr:nth-child(2n){
+    background-color: rgb(181, 179, 179);
+    color: white;
+}
+.title{
+    margin-top: 30px;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(213, 213, 213); 
+    border-radius: 10px;
+}
+.btn-editar{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(23, 23, 255);    
+    color: white;
+    border-radius: 10px;
+    border: none;
+    
+}
+.btn-eliminar{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(170, 0, 0);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    
+}
+@media(max-width:890px){
+    .container-navbar{
+        display: none;  
+    }
+    .container-div{
+        display: none;
+    }
+    .container-principal{
+        width: 100%;
+    }
+}
+@media(max-width:580px){ 
+    .container-user h3{
+        display: none;
+    }
+}
